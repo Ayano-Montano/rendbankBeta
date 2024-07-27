@@ -26,11 +26,11 @@ let login = window.document.querySelector("#login_button");
 login.addEventListener("click", ()=>{
 
     if(nome.value === 'ayanowho' && email.value ==='ayanowho@gmail.com' && senha.value === 'ayano@2025'){
-        window.location.href ="../../usuario/ayano.html";
+        window.location.href ="../usuario/ayano.html";
     }else if (nome.value === 'gustavohenrique' && email.value ==='gustavohenrique@gmail.com' && senha.value === 'gustavohenrique@2025') {
-        window.location.href ="../../usuario/gustavohenrique.html";
+        window.location.href ="../usuario/gustavohenrique.html";
     }else if (nome.value === 'patrolla' && email.value ==='patrolla@gmail.com' && senha.value === 'patrolla@2025') {
-        window.location.href ="../../usuario/patrolla.html";
+        window.location.href ="../usuario/patrolla.html";
     }
 
 
