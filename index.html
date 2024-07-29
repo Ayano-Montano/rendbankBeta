@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/Logo_rendbank.png" type="image/x-icon">
+    <script src="/rendbankBeta-main/assets/js/index.js" defer ></script>
     <title>RendBank Redimento Privado</title>
 </head>
+
 <body>
     <div class="container">
-        <header class="header">
-            <div class="logo">Rendbank</div>
+        <aside id="aside">
             <nav>
                 <a href="index.html">Home</a>
                 <a href="#">Investimentos</a>
@@ -18,17 +20,35 @@
                 <a href="teladelogin/index.html">Login</a>
                 <a href="https://discord.gg/frBXDWhSEC" target="_blank">Contato</a>
             </nav>
+        </aside>
+        <header class="header">
+            <div class="logo">Rendbank</div>
+            <nav class="navHeader">
+                <a href="index.html">Home</a>
+                <a href="#">Investimentos</a>
+                <a href="sobrenos.html">Sobre nós</a>
+                <a href="teladelogin/index.html">Login</a>
+                <a href="https://discord.gg/frBXDWhSEC" target="_blank">Contato</a>
+                <button onclick="menuResponsivo()" id="button_Menuu"><img class="svgMenu"
+                        src="/rendbankBeta-main/assets/img/svg/menu-vertical-svgrepo-com.svg" alt="menu"></button>
+            </nav>
         </header>
+        <main>
 
-        <h1>Bem-vindo ao Rendbank - O seu novo lar para investimentos!</h1>
+            <h1>Bem-vindo ao Rendbank - O seu novo lar para investimentos!</h1>
 
-        <h2>Por que escolher o Rendbank?</h2>
-        <p>
-            <span class="highlight">Segurança</span> é a nossa prioridade absoluta. Todos os nossos contas estão, o maior redimeto de todos, maior que <span class="highlight">106% do CDI</span>
+            <h2>Por que escolher o Rendbank?</h2>
+            <p>
+                <span class="highlight">Segurança</span> é a nossa prioridade absoluta. Todos os nossos contas estão, o
+                maior redimeto de todos, maior que <span class="highlight">106% do CDI</span>
 
-        </p>
+            </p>
 
 
             <img id="img-rendbank" src="assets/img/rendbanklanding.png" alt="rendbankl">
+        </main>
+
+
 </body>
+
 </html>

@@ -1,30 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+/* Responsividade para celulares e tablets */
+
+@media (max-width: 850px) {}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
+
+}
+main{
+    padding: 2rem;
 }
 
 .container {
     max-width: 100%;
     margin: 0 auto;
-    padding: 2rem;
-    overflow: hidden;
+
 }
 
 .header {
     width: 100%;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,6 +110,12 @@ li {
     padding: 10px;
 }
 
+header button {
+    background-color: white;
+    border: 0;
+    display: none;
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -111,7 +124,11 @@ footer {
     margin-top: 3rem;
 }
 
-@media (max-width: 768px) {
+aside {
+    display: none;
+}
+
+@media (max-width: 850px) {
     h1 {
         font-size: 2rem;
     }
@@ -131,5 +148,51 @@ footer {
 
     nav a {
         margin-bottom: 0.5rem;
+    }
+
+    header nav a {
+        display: none;
+    }
+
+    header button {
+        display: block;
+        right: 0;
+        top: 90px;
+    }
+
+    aside {
+        display: block;
+        background: rgba(255, 255, 255, 0.637);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        right: 250vh;
+        top: 68px;
+        width: 280px;
+        height: 100vh;
+        padding: 10px;
+    }
+
+    aside nav {
+        padding: 5%;
+        border-radius: 10px;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    aside nav a {
+        width: 80%;
+        font-size: 15px;
+        font-weight: 500;
+        color: #282828;
+        border-bottom: #d2d2d2 solid 1px;
+        border-radius: 0;
+    }
+
+    nav a:hover {
+        background: rgba(208, 208, 208, 0.637);
+
     }
 }
