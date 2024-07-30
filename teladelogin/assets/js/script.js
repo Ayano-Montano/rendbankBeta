@@ -31,6 +31,8 @@ login.addEventListener("click", ()=>{
         window.location.href ="../usuario/gustavohenrique.html";
     }else if (nome.value === 'patrolla' && email.value ==='patrolla@gmail.com' && senha.value === 'patrolla@2025') {
         window.location.href ="../usuario/patrolla.html";
+    }else if (nome.value === 'mirianaSantosDoNascimento' && email.value ==='santosmiriana18@gmail.com' && senha.value === 'miriana2005') {
+        window.location.href ="../usuario/mirianaSantosDoNascimento.html";
     }
 
 
