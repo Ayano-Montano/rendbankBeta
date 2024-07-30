@@ -192,7 +192,7 @@
     color: #7BCB82;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 980px) {
 
     .logo {
         margin-left: 10px;
