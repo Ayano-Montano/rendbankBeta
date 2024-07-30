@@ -2,8 +2,6 @@
 
 /* Responsividade para celulares e tablets */
 
-@media (max-width: 850px) {}
-
 * {
     margin: 0;
     padding: 0;
@@ -174,6 +172,7 @@ aside {
         width: 280px;
         height: 100vh;
         padding: 10px;
+        z-index: 100000;
     }
 
     aside nav {
