@@ -28,10 +28,11 @@ table {
   
     th, td {
       padding: 8px 0;
+      text-align: center;
     }
   
     th {
-      text-align: right;
+      text-align: center;
     }
   
     tfoot {

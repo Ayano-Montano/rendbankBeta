@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/usuario.css">
+    <link rel="stylesheet" href="css/retirada.css">
+    <link rel="shortcut icon" href="../assets/img/Logo_rendbank.png" type="image/x-icon">
+    <title>RendBank - Home</title>
+</head>
+<body>
+    <div id="container-pai">
+        <nav id="container-menu">
+
+        </nav>
+
+       <div class="w-full">
+                    <header id="cabecalho">
+                        <a class="logo" href=""><h1>RendBank</h1></a>
+
+                        <div class="container-usuario">
+                            <span class="span-usuario"><img id="img-usuario" src="../assets/img/Logo_rendbank.png" alt="">Retirada</span>
+                        </div>
+                    </header>
+
+                <div class="informacao-bancaria">
+
+                    <div class="formulario">
+                        <div class="form-item">
+                            <label for="">Nome</label><input type="text" name="" id="nome">
+                        </div>
+                        <div class="form-item">
+                            <label for="">ID</label><input type="email" name="" id="ID">
+                        </div>
+                        <div class="form-item">
+                            <label for="">Valor</label><input type="number" name="" id="valor">
+                        </div>
+
+                        <button id="envia">Solicita</button>
+                    </div>
+
+                    
+                
+                </div>
+    </div>
+
+    <script>
+        let button = document.querySelector('#envia');
+       
+        function EnviaWhat() {
+            let Telefone = "+554899620593";
+            let nome = document.querySelector('#nome').value;
+            let ID = document.querySelector('#ID').value;
+            let Valor = document.querySelector('#valor').value;
+            
+            
+            let url = "https://wa.me/" + Telefone + "?text=" + "*Retirada*%0a" 
+            + "*Nome:* " +nome+"%0a"
+            + "*ID:* " +ID+"%0a"
+            + "*Valor:* " +Valor+"%0a";
+
+            window.open(url, '_blank').focus();
+            
+        }
+
+        button.addEventListener('click',EnviaWhat)
+
+        
+    </script>
+</body>
+</html>
