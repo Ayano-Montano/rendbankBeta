@@ -33,6 +33,8 @@ login.addEventListener("click", ()=>{
         window.location.href ="../usuario/patrolla.html";
     }else if (nome.value === 'mirianaSantosDoNascimento' && email.value ==='santosmiriana18@gmail.com' && senha.value === 'miriana2005') {
         window.location.href ="../usuario/mirianaSantosDoNascimento.html";
+    }else if (nome.value === 'maibts' && email.value ==='94827402mlr@gmail.com' && senha.value === '112717') {
+        window.location.href ="../usuario/maiBTS.html";
     }
 
 
